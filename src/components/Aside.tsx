@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { MouseEventHandler } from 'react';
 
 import styled from 'styled-components';
-import Button from './Input/Button';
+import Button from './common/Button';
 
 const AsideContainer = styled.aside`
     background-color: #2c2a34;

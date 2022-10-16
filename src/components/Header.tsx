@@ -3,7 +3,7 @@ import { faBell, faComment, faSitemap, faUser } from '@fortawesome/free-solid-sv
 
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Input/Button';
+import Button from './common/Button';
 
 const HeaderContainer = styled.header`
     line-height: 4rem;

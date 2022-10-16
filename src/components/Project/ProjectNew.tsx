@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../Input/Button';
-import InputText from '../Input/InputText';
-import TextArea from '../Input/TextArea';
+import Button from '../common/Button';
+import InputText from '../common/InputText';
+import TextArea from '../common/TextArea';
 
 const ProjectNewContainer = styled.div`
 `;
@@ -39,7 +39,7 @@ type ProjectNewProps = {
 function ProjectNew({setProject}: ProjectNewProps) {
 
     const createProject = () => {
-        
+
     };
 
     return (
