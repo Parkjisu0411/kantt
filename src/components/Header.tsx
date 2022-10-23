@@ -1,9 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faComment, faSitemap, faUser } from '@fortawesome/free-solid-svg-icons';
-
 import React from 'react';
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import Button from './common/Button';
+
+import { faBell, faComment, faSitemap, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const HeaderContainer = styled.header`
     line-height: 4rem;
@@ -28,6 +28,13 @@ const HeaderContainer = styled.header`
             }
         }
     }
+
+    a {
+        color: #999999;
+        &:hover {
+            color: #36bfcd;
+        }
+    }
 `;
 
 const HeaderLogo = styled.text`
@@ -42,7 +49,9 @@ function Header() {
 
     return (
         <HeaderContainer>
-            <HeaderLogo>KANTT</HeaderLogo>
+            <Link to={'/'}>
+                <HeaderLogo>KANTT</HeaderLogo>
+            </Link>
             <div>
                 <ul>
                     <li>
@@ -55,7 +64,9 @@ function Header() {
                         <Button icon={ faBell } buttonType={'icon'} onClick={() => {}}></Button>
                     </li>
                     <li>
-                        <Button icon={ faUser } buttonType={'icon'} onClick={() => {}}></Button>
+                        <Link to={'/signin'}>
+                            <Button icon={ faUser } buttonType={'icon'} onClick={() => {}}></Button>
+                        </Link>
                     </li>
                 </ul>
             </div>

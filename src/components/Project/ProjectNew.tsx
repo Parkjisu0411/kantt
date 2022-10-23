@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '../common/Button';
-import InputText from '../common/InputText';
+import {InputText} from '../common/Input';
 import TextArea from '../common/TextArea';
 
 const ProjectNewContainer = styled.div`
@@ -50,7 +50,7 @@ function ProjectNew({setProject}: ProjectNewProps) {
             <ProjectNav></ProjectNav>
             <ProjectMain>
                 <div>
-                    <InputText placeholder='제목을 입력하세요.'></InputText>
+                    <InputText placeholder='제목을 입력하세요.' em={true} ></InputText>
                 </div>
                 <div>
                     <TextArea placeholder='프로젝트에 관한 설명 입력'></TextArea>
